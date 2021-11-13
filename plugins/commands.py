@@ -42,8 +42,8 @@ async def start(client, message):
     ],[
         InlineKeyboardButton('❄️ ϴᴜʀ Տᴇʀɪᴇs Ꮯʜᴀɴɴᴇʟ ❄️',url='https://t.me/STARZONE_SERIES')
     ],[
-       
         InlineKeyboardButton ('❤️‍🔥 Ꮇᴜsᴛ Ꭻᴏɪɴ ❤️‍🔥', url='https://t.me/Star_LinkzZ')
+        InlineKeyboardButton('❗ Help', callback_data='help') 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -62,7 +62,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "♻️ Join My Channel♻️", url=invite_link.invite_link
                 )
             ]
         ]
