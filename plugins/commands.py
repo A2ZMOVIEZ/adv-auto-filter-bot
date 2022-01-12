@@ -17,10 +17,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('♻️ Join Now ♻️', url='https://t.me/STARZONE_MOVIESZ')
+                InlineKeyboardButton('♻️ Join Now ♻️', url='https://t.me/STARZONE_MAIN')
             ],
             [
-                InlineKeyboardButton('💖Share Us 💖', url='https://telegram.me/share/url?url=t.me/STARZONE_MOVIEREQUEST'),
+                InlineKeyboardButton('💖Share Us 💖', url='https://telegram.me/share/url?url=t.me/STARZONE_MOVIE_REQUEST'),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -35,12 +35,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚡️ Ᏼᴏss ⚡️', url='https://t.me/STARZONE_ADMINBOT'),
-        InlineKeyboardButton('💫 ϴᴜʀ Ꮯʜᴀɴɴᴇʟ 💫', url ='https://t.me/STARZONE_MOVIESZ')
+            InlineKeyboardButton('⚡️ Ᏼᴏss ⚡️', url='https://t.me/FLOATING_HEART_HD'),
+        InlineKeyboardButton('💫 ϴᴜʀ Ꮯʜᴀɴɴᴇʟ 💫', url ='https://t.me/STARZONE_MAIN')
     ],[
-        InlineKeyboardButton('✨ Ꮇᴏᴠɪᴇ Ꭱᴇǫᴜᴇsᴛ ✨', url='https://t.me/STARZONE_MOVIEREQUEST')
+        InlineKeyboardButton('✨ Ꮇᴏᴠɪᴇ Ꭱᴇǫᴜᴇsᴛ ✨', url='https://t.me/STARZONE_MOVIE_REQUEST')
     ],[
-        InlineKeyboardButton('❄️ ϴᴜʀ Տᴇʀɪᴇs Ꮯʜᴀɴɴᴇʟ ❄️',url='https://t.me/STARZONE_SERIES')
+        InlineKeyboardButton('❄️ ϴᴜʀ Տᴇʀɪᴇs Ꮯʜᴀɴɴᴇʟ ❄️',url='https://t.me/STARZONE_SERIESZ')
     ],[
         InlineKeyboardButton ('❤️‍🔥 Ꮇᴜsᴛ Ꭻᴏɪɴ ❤️‍🔥', url='https://t.me/Star_LinkzZ'), 
         InlineKeyboardButton('🆘 Help', callback_data='help')
